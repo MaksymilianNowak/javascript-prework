@@ -34,3 +34,23 @@ if(computerMove == 'nożyce' && playerMove == 'nożyce'){printMessage('Remis');}
 if(computerMove == 'kamień' && playerMove == 'nieznany ruch'){printMessage('Proszę wybrać 1 2 lub 3');}
 if(computerMove == 'papier' && playerMove == 'nieznany ruch'){printMessage('Proszę wybrać 1 2 lub 3');}
 if(computerMove == 'nożyce' && playerMove == 'nieznany ruch'){printMessage('Proszę wybrać 1 2 lub 3');}
+
+function getMoveName(argMoveId){
+    if(argMoveId == 1){
+        return 'kamień';
+    }else{
+        printMessage('Nie znam ruchu o id' + argMoveId + '_');
+        return 'nieznany ruch';
+    }
+
+    }
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+        printMessage('Ty wygrywasz');
+    }else {
+        printMessage('Tym razem przegrywasz');
+    }
+} 
