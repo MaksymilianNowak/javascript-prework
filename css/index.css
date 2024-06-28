@@ -1,2 +1,11 @@
-
+/*Global*/
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJpbmRleC5jc3MifQ== */
+.game {
+    text-align: center;
+    font-size: 32px;
+
+}
+.gamepol{
+    text-align: center;
+    font-size: 20px;
+}
