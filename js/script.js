@@ -144,3 +144,5 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Proszę wybrać 1 2 lub 3');
     }
 }
+
+console.log('moves:', argComputerMove, argPlayerMove);
