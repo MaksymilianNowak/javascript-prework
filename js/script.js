@@ -95,3 +95,52 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Przegrywasz');
     }
 }
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
+        printMessage('Remis');
+
+    }
+}
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'papier' && argPlayerMove == 'papier'){
+        printMessage('Remis');
+    }
+}
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'){
+        printMessage('Remis');
+    }
+}
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'kamień' && argPlayerMove == 'nieznany ruch'){
+        printMessage('Proszę wybrać 1 2 lub 3');
+    }
+}
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'papier' && argPlayerMove == 'nieznany ruch'){
+        printMessage('Proszę wybrać 1 2 lub 3');
+    }
+}
+
+function displayResult(argComputerMove, argPlayerMove){
+    printMessage('Zagrałem'+ argComputerMove+'a ty'+ argPlayerMove);
+
+    if(argComputerMove == 'nożyce' && argPlayerMove == 'nieznany ruch'){
+        printMessage('Proszę wybrać 1 2 lub 3');
+    }
+}
