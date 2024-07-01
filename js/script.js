@@ -83,7 +83,22 @@ function getMoveName(argMoveId){
       
 }
 console.log('moves:', argComputerMove, argPlayerMove);
+
+function buttonClicked(){
+    printMessage('Guzik został kliknięty');
 }
+
+let testButton = document.getElementById('test-button');
+
+play-rock.addEventListener('click', buttonClicked);
+play-paper.addEventListener('click', buttonClicked);
+play-scissors.addEventListener('click', buttonClicked);
+
+
+
+
+}
+
 
 
 
