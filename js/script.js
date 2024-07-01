@@ -1,4 +1,4 @@
-playGame();{
+playGame(playerInput);{
 
  let randomNumber = Math.floor(Math.random() * 3+1);
 
@@ -17,7 +17,7 @@ playGame();{
 
  printMessage('Mój ruch to: ' + computerMove);
 
- let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+ let playerInput = playGame(playerInput);
 
  console.log('Gracz wpisał: '+ playerInput);
 
@@ -84,5 +84,8 @@ function getMoveName(argMoveId){
 }
 console.log('moves:', argComputerMove, argPlayerMove);
 }
+
+
+
 
 
