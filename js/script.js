@@ -1,4 +1,4 @@
-playGame(playerInput);{
+function playGame(playerInput){
 
  let randomNumber = Math.floor(Math.random() * 3+1);
 
@@ -17,7 +17,7 @@ playGame(playerInput);{
 
  printMessage('Mój ruch to: ' + computerMove);
 
- let playerInput = playGame(playerInput);
+ let playerInput = playGame()
 
  console.log('Gracz wpisał: '+ playerInput);
 
@@ -83,19 +83,22 @@ function getMoveName(argMoveId){
       
 }
 console.log('moves:', argComputerMove, argPlayerMove);
+argComputerMove = computerMove
+argPlayerMove = player
 
 function buttonClicked(){
-    printMessage('Guzik został kliknięty');
+    printMessage(playGame(1),playGame(2),playGame(3));
 }
 
-let testButton = document.getElementById('test-button');
+let playRock = document.getElementById('play-rock');
+let playPaper = document.getElementById('play-paper');
+let playScissors = document.getElementById('play-scissors')
 
-play-rock.addEventListener('click', playGame(1));
-play-paper.addEventListener('click', playGame(2));
-play-scissors.addEventListener('click', playGame(3));
+playRock.addEventListener('click', buttonClicked);
+playPaper.addEventListener('click', buttonClicked);
+playScissors.addEventListener('click', buttonClicked);
 
-
-
+function clearMessages(){}
 
 }
 
