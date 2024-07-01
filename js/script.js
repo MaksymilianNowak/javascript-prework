@@ -90,9 +90,9 @@ function buttonClicked(){
 
 let testButton = document.getElementById('test-button');
 
-play-rock.addEventListener('click', buttonClicked);
-play-paper.addEventListener('click', buttonClicked);
-play-scissors.addEventListener('click', buttonClicked);
+play-rock.addEventListener('click', playGame(1));
+play-paper.addEventListener('click', playGame(2));
+play-scissors.addEventListener('click', playGame(3));
 
 
 
