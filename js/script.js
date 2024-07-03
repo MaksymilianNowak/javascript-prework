@@ -15,7 +15,7 @@ function playGame(playerInput){
         printMessage('Nie znam ruchu o id'+ argMoveId+ '_');
         return 'nieznany ruch'
     }
-    
+
     let computerMove = getMoveName(randomNumber);
     let playerMove = getMoveName(playerInput);
 
@@ -60,9 +60,8 @@ displayResult(computerMove, playerMove);
 
 }
 
-function buttonClicked(){
-    printMessage();
-}
+
+
 
 let playRock = document.getElementById('play-rock');
 let playPaper = document.getElementById('play-paper');
