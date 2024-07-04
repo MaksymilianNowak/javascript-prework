@@ -20,6 +20,7 @@ let playerMove = getMoveName(playerInput);
   
 
  function displayResult(argComputerMove,argPlayerMove){
+    clearMessages();
     printMessage(' Zagrałem '+ argComputerMove +  ' a ty ' + argPlayerMove);
 
  if(argComputerMove == 'kamień' && argPlayerMove =='papier'){
