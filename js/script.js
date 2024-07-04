@@ -1,7 +1,8 @@
 function playGame(playerInput){
 
  let randomNumber = Math.floor(Math.random() * 3+1);
-
+let computerMove = getMoveName(randomNumber);
+let playerMove = getMoveName(playerInput);
  
 
  function getMoveName(argMoveId){
@@ -14,10 +15,9 @@ function playGame(playerInput){
     }else{
         printMessage('Nie znam ruchu o id'+ argMoveId+ '_');
         return 'nieznany ruch'
-    }
+    }}
 
-    let computerMove = getMoveName(randomNumber);
-    let playerMove = getMoveName(playerInput);
+  
 
  function displayResult(argComputerMove,argPlayerMove){
     printMessage('Zagrałem'+ argComputerMove+ 'a ty'+ argPlayerMove);
@@ -50,11 +50,13 @@ function playGame(playerInput){
     printMessage('Proszę wybrać 1 2 lub 3');
 } else if(argComputerMove == 'nożyce' && argPlayerMove == 'nieznany ruch'){
     printMessage('Proszę wybrać 1 2 lub 3');
+    
 
 }}
 displayResult(computerMove, playerMove);
+
       
-}
+
 
 
 
