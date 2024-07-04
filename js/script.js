@@ -2,7 +2,7 @@ function playGame(playerInput){
 
  let randomNumber = Math.floor(Math.random() * 3+1);
 
- console.log('Wylosowana liczba to: '+ randomNumber);
+ 
 
  function getMoveName(argMoveId){
     if(argMoveId == 1){
