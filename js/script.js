@@ -1,11 +1,11 @@
- function playGame(playerInput) {
+ function playGame(playerInput){
 
  let randomNumber = Math.floor(Math.random() * 3+1);
 let computerMove = getMoveName(randomNumber);
 let playerMove = getMoveName(playerInput);
  
 
- const getMoveName = function(argMoveId) {
+ const getMoveName = function(argMoveId){
     if(argMoveId == 1){
         return 'kamień';
     }else if(argMoveId == 2){
@@ -15,11 +15,11 @@ let playerMove = getMoveName(playerInput);
     }else{
         printMessage('Nie znam ruchu o id'+ argMoveId+ '_');
         return 'nieznany ruch'
-    }};
+    }}
 
   
 
- const displayResult = function(argComputerMove,argPlayerMove) {
+ const displayResult = function(argComputerMove,argPlayerMove){
     clearMessages();
     printMessage(' Zagrałem '+ argComputerMove +  ' a ty ' + argPlayerMove);
 
@@ -61,7 +61,7 @@ displayResult(computerMove, playerMove);
 
 
 
-};
+}
 
 
 
