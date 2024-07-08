@@ -5,7 +5,7 @@ let computerMove = getMoveName(randomNumber);
 let playerMove = getMoveName(playerInput);
  
 
- const getMoveName = function(argMoveId){
+ function getMoveName (argMoveId){
     if(argMoveId == 1){
         return 'kamień';
     }else if(argMoveId == 2){
@@ -19,7 +19,7 @@ let playerMove = getMoveName(playerInput);
 
   
 
- const displayResult = function(argComputerMove,argPlayerMove){
+ function displayResult (argComputerMove,argPlayerMove){
     clearMessages();
     printMessage(' Zagrałem '+ argComputerMove +  ' a ty ' + argPlayerMove);
 
@@ -53,7 +53,7 @@ let playerMove = getMoveName(playerInput);
     printMessage('Proszę wybrać 1 2 lub 3');
     
 
-}};
+}}
 displayResult(computerMove, playerMove);
 
       
