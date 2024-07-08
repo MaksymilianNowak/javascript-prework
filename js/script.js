@@ -15,7 +15,7 @@ let playerMove = getMoveName(playerInput);
     }else{
         printMessage('Nie znam ruchu o id'+ argMoveId+ '_');
         return 'nieznany ruch'
-    }}
+    }};
 
   
 
@@ -53,7 +53,7 @@ let playerMove = getMoveName(playerInput);
     printMessage('Proszę wybrać 1 2 lub 3');
     
 
-}}
+}};
 displayResult(computerMove, playerMove);
 
       
@@ -61,7 +61,7 @@ displayResult(computerMove, playerMove);
 
 
 
-}
+};
 
 
 
