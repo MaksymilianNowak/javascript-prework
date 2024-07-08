@@ -1,11 +1,11 @@
-const playGame = function(playerInput){
+const playGame = function(playerInput) {
 
  let randomNumber = Math.floor(Math.random() * 3+1);
 let computerMove = getMoveName(randomNumber);
 let playerMove = getMoveName(playerInput);
  
 
- const getMoveName = function(argMoveId){
+ const getMoveName = function(argMoveId) {
     if(argMoveId == 1){
         return 'kamień';
     }else if(argMoveId == 2){
@@ -19,7 +19,7 @@ let playerMove = getMoveName(playerInput);
 
   
 
- const displayResult = function(argComputerMove,argPlayerMove){
+ const displayResult = function(argComputerMove,argPlayerMove) {
     clearMessages();
     printMessage(' Zagrałem '+ argComputerMove +  ' a ty ' + argPlayerMove);
 
