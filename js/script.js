@@ -1,4 +1,4 @@
-const playGame = function(playerInput) {
+ function playGame(playerInput) {
 
  let randomNumber = Math.floor(Math.random() * 3+1);
 let computerMove = getMoveName(randomNumber);
